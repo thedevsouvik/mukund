@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Mission: Tactical Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Poppins:wght@400;600&display=swap');
+        
+        body { font-family: 'Poppins', sans-serif; background-color: #05070a; scroll-behavior: smooth; }
+        .font-tactical { font-family: 'Orbitron', sans-serif; }
+
+        @keyframes float-gentle {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-25px) rotate(3deg); }
+        }
+        .animate-float { animation: float-gentle 6s ease-in-out infinite; }
+
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .squad-card {
+            transition: all 0.2s ease-out;
+            border-left: 4px solid #f59e0b;
+        }
+        .squad-card:hover {
+            transform: translateX(8px);
+            background: rgba(30, 41, 59, 0.9);
+            border-left-color: #ffffff;
+        }
+    </style>
+</head>
+<body class="relative text-slate-100 min-h-screen overflow-x-hidden selection:bg-amber-500">
+
+    <div class="fixed inset-0 pointer-events-none z-0">
+        <img src="img/party.png" class="absolute top-10 left-[2%] w-24 md:w-48 animate-float opacity-70">
+        <img src="img/baloon.png" class="absolute top-1/4 right-[2%] w-24 md:w-40 animate-float opacity-70" style="animation-delay: 1s;">
+        <img src="img/cake.png" class="absolute bottom-20 left-[2%] w-24 md:w-56 animate-float opacity-50" style="animation-delay: 2s;">
+    </div>
+    
+    <header class="text-center mb-16 md:mb-28 sticky mt-10">
+	    <div class="relative inline-block mb-10">
+	    <div class="absolute -inset-8 bg-amber-500/20 rounded-full blur-3xl animate-pulse"></div>
+		    <div class="relative w-44 h-44 sm:w-64 sm:h-64 lg:w-80 lg:h-80 mx-auto rounded-full border-4 md:border-[12px] border-amber-500 p-2 bg-slate-900 shadow-2xl overflow-hidden">
+		    <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=800" class="w-full h-full object-cover rounded-full" alt="Birthday Legend">
+		    </div>
+	    <div class=" uppercase absolute -bottom-2 left-2 md:bottom-8 md:right-8 bg-amber-500 text-black px-6 py-2 font-tactical text-xs md:text-lg font-black italic transform skew-x-[-12deg] shadow-xl">
+    MUKUND THAKUR
+	    </div>
+	    </div>
+    
+    <h1 class="text-6xl md:text-9xl font-tactical font-black text-white italic tracking-tighter leading-none mb-6">
+    HAPPY <span class="text-amber-500">BIRTHDAY!</span>
+    </h1>
+    <p class="text-slate-500 font-bold tracking-[0.4em] uppercase text-xs md:text-base">Mission Sttus: Birthday Mode</p>
+    </header>
+
+    <div class="relative z-10 w-full max-w-7xl mx-auto px-6 py-10 md:py-20">
+        
+        
+
+        <div class="grid lg:grid-cols-12 gap-10 items-start">
+            
+            <div class="lg:col-span-4 space-y-6">
+                <section class="glass-panel p-8 rounded-[2rem]">
+                    <h2 class="font-tactical text-amber-500 mb-6 text-sm uppercase tracking-widest flex items-center gap-3">
+                        <span class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></span> Profile Stats
+                    </h2>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-end border-b border-slate-700 pb-2">
+                            <span class="text-slate-400 text-xs uppercase font-bold">Gameplay</span>
+                            <span class="text-amber-500 font-tactical">AWESOME</span>
+                        </div>
+                        <div class="flex justify-between items-end border-b border-slate-700 pb-2">
+                            <span class="text-slate-400 text-xs uppercase font-bold">Teamwork</span>
+                            <span class="text-cyan-400 font-tactical">100%</span>
+                        </div>
+                        <div class="flex justify-between items-end border-b border-slate-700 pb-2">
+                            <span class="text-slate-400 text-xs uppercase font-bold">Kindness</span>
+                            <span class="text-red-500 font-tactical">INFINITE</span>
+                        </div>
+                    </div>
+                </section>
+                
+                <div class="hidden lg:block glass-panel p-6 rounded-2xl text-center">
+                    <p class="text-[10px] text-slate-500 font-tactical uppercase tracking-widest">Connection: Secure</p>
+                    <p class="text-amber-500/40 text-[10px] font-tactical mt-1">LATENCY: 12ms</p>
+                </div>
+            </div>
+
+            <div class="lg:col-span-8 space-y-12">
+                
+                <form class="form glass-panel p-8 rounded-[2.5rem] border-t-4 border-amber-500 shadow-xl">
+                    <div class="flex items-center gap-4 mb-8">
+                        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Writing%20Hand.png" class="w-10 h-10">
+                        <h2 class="font-tactical text-2xl text-white uppercase tracking-tighter">Submit Your Wish</h2>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            
+                                <input required type="text" placeholder="Your name..." class="w-full bg-black/40 border border-slate-700 p-4 rounded-2xl text-amber-500 focus:border-amber-500 transition-all outline-none font-medium">
+                                <textarea required cols="20" placeholder="Your greetfull wishes" class="w-full bg-black/40 border col-3 border-slate-700 p-4 rounded-2xl text-slate-300 focus:border-amber-500 transition-all outline-none resize-none min-h-14 md:h-auto"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full group relative py-5 bg-amber-500 active:bg-white text-black font-tactical font-black uppercase tracking-[0.4em] text-sm rounded-2xl transition-all shadow-[0_10px_30px_rgba(245,158,11,0.2)] hover:scale-[1.01] active:scale-95">
+                            DEPLOY WISH 🚀
+                        </button>
+                    </div>
+                </form>
+
+                <div class="space-y-6">
+                    <h3 class="font-tactical text-slate-500 text-xs uppercase tracking-[0.5em] px-2">Heart Wishes</h3>
+                    <div class="list grid md:grid-cols-2 gap-6">
+                        <div class="squad-card glass-panel p-6 rounded-3xl">
+                            <p class="text-amber-500 font-tactical text-[10px] mb-3 uppercase font-black tracking-widest italic">Mom & Dad [SQUAD_01]</p>
+                            <p class="text-slate-300 text-sm leading-relaxed font-medium italic">"So proud of you! Have the best day ever, son! We love you so much."</p>
+                        </div>
+                        <div class="squad-card glass-panel p-6 rounded-3xl border-l-cyan-500">
+                            <p class="text-cyan-400 font-tactical text-[10px] mb-3 uppercase font-black tracking-widest italic">The Bros [SQUAD_02]</p>
+                            <p class="text-slate-300 text-sm leading-relaxed font-medium italic">"Happy Birthday Legend! Let's get that victory today. Cake is waiting! 🎮"</p>
+                        </div>
+                        <div class="squad-card glass-panel p-6 rounded-3xl border-l-red-500">
+                            <p class="text-red-400 font-tactical text-[10px] mb-3 uppercase font-black tracking-widest italic">Sister [SQUAD_03]</p>
+                            <p class="text-slate-300 text-sm leading-relaxed font-medium italic">"HBD! To the coolest brother in the world. May your day be lag-free! 🎉"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-32 pt-10 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6 opacity-40">
+            <div class="font-tactical text-[10px] uppercase tracking-widest text-slate-500">LOVE FROM SOUVIK</div>
+            <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Heart%20Hands.png" class="w-10 h-10 animate-bounce">
+        </footer>
+    </div>
+    
+    <script>
+        const listCon = document.querySelector('.list');
+        
+    const form = document.querySelector('.form');
+    form.addEventListener('submit', (e)=>{
+    e.preventDefault();
+    const name = form.querySelector('input').value;
+    const msg = form.querySelector('textarea').value;
+    
+    // if (!name && !msg)  return ;
+    // post the message
+
+    const html = `<div class="squad-card glass-panel p-6 rounded-3xl">
+    <p class="text-amber-500 font-tactical text-[10px] mb-3 uppercase font-black tracking-widest italic">${name}</p>
+    <p class="text-slate-300 text-sm leading-relaxed font-medium italic">"${msg}"</p>
+    </div>`;
+    
+    listCon.innerHTML += html;
+    
+    
+    form.reset()
+    form.querySelector('button').blur();
+    })
+    
+    window.addEventListener('load', (e)=>{
+    const allMsg = [{name:"asdsd", msg: "asdasd"}] // get throw api
+    const prev = ``;
+    allMsg.map(m=>{
+    prev = prev + `<div class="squad-card glass-panel p-6 rounded-3xl">
+    <p class="text-amber-500 font-tactical text-[10px] mb-3 uppercase font-black tracking-widest italic">${m.name}</p>
+    <p class="text-slate-300 text-sm leading-relaxed font-medium italic">"${m.msg}"</p>
+    </div>`
+    })
+    listCon.innerHTML += prev;
+    
+    })
+    </script>
+
+</body>
+</html>cking-widest text-slate-500">Status: Legendary</div>
+        </footer>
+    </div>
+
+</body>
+</html>
